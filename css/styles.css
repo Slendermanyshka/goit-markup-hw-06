@@ -1,4 +1,4 @@
-:root {
+ :root {
   --backgroundColorBlack: #2f303a;
   --highlightColor: #2196f3;
 }
@@ -232,7 +232,9 @@ body {
   width: 200px;
   height: 50px;
   margin-top: 40px;
+  font-family: -Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
+  font-weight: 500;
   color: #ffffff;
   border: 0px;
   background-color: var(--highlightColor);
@@ -359,7 +361,7 @@ body {
 
   width: 100%;
   padding: 27px 0px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(47, 48, 58, 0.8);
   line-height: 16.41px;
   font-size: 14px;
   font-weight: 700;
@@ -425,14 +427,17 @@ body {
   background-size: 20px 20px;
   border-radius: 50%;
   border: 0px;
-  background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .teamIconFill {
-  fill: #757575;
+  fill: #AFB1b8;
+}
+
+.teamIconBackground{
+  background-color: #ffffff ;
 }
 
 .icon-social:hover .teamIconFill,
@@ -466,9 +471,7 @@ body {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.icon-social-footer-fixAttempt{
-  background-color: rgba(255,255,255,0.1);
-}
+
 
 .teamSectionFIx {
   background-color: #f5f3fa;
@@ -831,12 +834,11 @@ body {
   min-height: 581px;
   background-color: #ffffff;
   border-radius: 5px;
-  padding-bottom: 40px;
 }
 .btn-open {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   right: 5px;
   top: 5px;
   background: #ffffff;
@@ -858,13 +860,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 58px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 12px;
+  padding: 0 40px;
+
 }
 
 .modal-title {
-  padding: 40px 40px 30px 40px;
+  padding: 40px 40px 12px 40px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -936,39 +937,56 @@ padding: 12px 16px;
   fill: #2196F3 ;
 }
 
+
+
 .modal-checkbox{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
 }
 .termsuse-text{
-    display: flex;
-    margin: 0;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: #757575;
-    padding-left: 7px;
+  display: flex;
+  margin: 0;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #757575;
+  padding-left: 7px;
 }
 .termsuse-text::before{
-    content: "";
-    width: 15px;
-    height: 15px;
-    border: 2px solid#212121;
-    border-radius: 2px;
-    margin-right: 5px;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 2px solid#212121;
+  border-radius: 2px;
+  margin-right: 5px;
 }
 .check:checked + .termsuse-text::before{
-    background-color: #2196F3;
-    border: none;
-    background-image: url(../images/sprite.svg#icon-check);
-    background-repeat: no-repeat;
-    background-size: contain;
+  background-color: #2196F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-image: url(../images/icon-check.svg);
+  background-repeat: no-repeat;
+  padding: 3px;
+  background-size: contain;
 }
 .check{
-    display: none;
+  display: none;
+  width: 15px;
+  height: 15px;
 }
+.terms-link{
+  margin-left: 5px;
+  text-decoration-line: underline;
+  color: #2196F3;
+}
+
 
 .terms-text{
   font-family: Roboto;
@@ -1012,3 +1030,4 @@ color: #757575;
 .send-button:hover, .send-button:focus{
     background: #188ce8;
 }
+
